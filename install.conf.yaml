@@ -1,0 +1,37 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - rm ~/.config/doom/*
+  - rm ~/.zshrc
+  - rm ~/.p10k.zsh
+  - rm ~/.config/hypr/config/colors.conf
+  - rm ~/.config/hypr/config/defaults.conf
+  - rm ~/.config/hypr/config/keybinds.conf
+  - sudo rm -rf /usr/share/sddm/themes/sddm-astronaut-theme/*
+  - sudo cp backgrounds/*.png ~/wallpapers
+  - mkdir -p ~/Pictures/self
+  - cp portrait/self.jpg ~/Pictures/self/self.jpg
+
+- link:
+    ~/.zshrc:
+    ~/.p10k.zsh:
+    ~/.config/doom:
+      path: Doom-Emacs-Config
+      relink: true
+    ~/.config/hypr/config/colors.conf:
+      path: hypr/colors.conf
+      relink: true
+    ~/.config/hypr/config/defaults.conf:
+      path: hypr/defaults.conf
+      relink: true
+    ~/.config/hypr/config/keybinds.conf:
+      path: hypr/keybinds.conf
+      relink: true
+    /usr/share/sddm/themes/sddm-astronaut-theme/:
+      glob: true
+      path: sddm-astronaut-theme/*
+      relink: true
