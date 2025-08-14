@@ -1,0 +1,7 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
+[submodule "Doom-Emacs-Config"]
+	path = Doom-Emacs-Config
+	url = git@github.com:PrismaPhonic/Doom-Emacs-Config.git
