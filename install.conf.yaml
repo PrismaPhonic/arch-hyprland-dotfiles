@@ -30,8 +30,3 @@
       glob: true
       path: Doom-Emacs-Config/*
       relink: true
-    /usr/share/sddm/themes/sddm-astronaut-theme/:
-      glob: true
-      path: sddm-astronaut-theme/*
-      type: hardlink
-      relink: true
