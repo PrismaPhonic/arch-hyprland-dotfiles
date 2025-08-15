@@ -33,4 +33,5 @@
     /usr/share/sddm/themes/sddm-astronaut-theme/:
       glob: true
       path: sddm-astronaut-theme/*
+      type: hardlink
       relink: true
